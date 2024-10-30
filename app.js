@@ -63,19 +63,3 @@ function hide() {
   }
 }
 
-document.getElementById("modalBtn").onclick = function () {
-  clickFunction();
-};
-var showModal = document.getElementById("mainModal");
-
-function clickFunction() {
-  // alert("btn click function");
-  showModal.classList.remove("modalToggle");
-}
-
-function closeFunction() {
-  // alert("close Button");
-  showModal.classList.add("modalToggle");
-}
-
-
