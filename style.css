@@ -371,101 +371,24 @@ video {
   width: 100%;
   height: 500px;
 }
-#section2 img{
 
-  width: 90%;
-}
-#section2 .linktram{
-  
+#section2 h5 a{
   background-color:transparent;
+  padding: 0%;
+}
+#section2 #modal-4 img{
+ width: 70%;
+ height: 60%;
+}
+#section2 div .modalDialog h5 .linktram i{
+ padding: -30px -30px;
+ color: #ea4436;
 }
 
 #section2 p span {
   padding: 15px;
   font-size: 2rem;
   font-weight: 600;
-}
-
-/* modal button */
-.firstButton {
-  border: none;
-  background-color: #008080;
-  color: #fff;
-  padding: 4px 10px;
-  margin: 10px auto;
-}
-.firstButton:hover {
-  outline: none;
-  cursor: pointer;
-  opacity: 0.8;
-}
-.firstButton:visited {
-  outline: none;
-}
-
-/* Modal Box */
-.modal {
-  position: absolute;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-.modalBody {
-  background-color: #fff;
-  margin: 5rem auto;
-  width: 769px;
-  border-radius: 5px;
-}
-.modalHeader {
-  padding: 1px 10px;
-  border-bottom: 1px solid #ccc;
-}
-.modalHeader span {
-  float: right;
-  font-size: 14px;
-  padding-right: 5px;
-}
-.modalHeader span:hover {
-  cursor: pointer;
-}
-.modalFooter {
-  padding: 5px 10px;
-}
-.modalContant {
-  padding: 5px 10px;
-  border-bottom: 1px solid #ccc;
-}
-.modalFooter {
-  text-align: center;
-}
-.footerbtn {
-  border: none;
-  background-color: #008000;
-  color: #fff;
-  padding: 10px 20px;
-  margin: 10px auto;
-  border-radius: 5px;
-}
-.footerbtn:hover {
-  outline: none;
-  cursor: pointer;
-  opacity: 0.8;
-}
-.footerbtn:visited {
-  outline: none;
-}
-
-.modalToggle {
-  display: none;
-}
-
-@media screen and (max-width: 679px) {
-  .modalBody {
-    width: 95%;
-    margin: 5rem auto;
-  }
 }
 
 /*section3 nearby*/
