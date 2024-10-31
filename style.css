@@ -88,6 +88,130 @@ nav {
   transition: ease 0.5s;
 }
 
+
+.fa-calendar ,.fa-house-user {
+  -webkit-animation: bounce-top 3.2s ease-out infinite alternate-reverse both;
+  animation: bounce-top 3.2s ease-out infinite alternate-reverse both;
+}
+.fa-key ,.fa-train-subway,.fa-street-view , .fa-envelope{
+  -webkit-animation: bounce-top 3.8s ease-out infinite alternate-reverse both;
+  animation: bounce-top 3.8s ease-out infinite alternate-reverse both;
+}
+.fa-person-walking-luggage ,.fa-map-location-dot {
+  -webkit-animation: bounce-top 3.6s ease-out infinite alternate-reverse both;
+  animation: bounce-top 3.6s ease-out infinite alternate-reverse both;
+}
+
+/**
+ * ----------------------------------------
+ * animation bounce-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
 /*end link style mobile view*/
 /* end of nav style mobile view*/
 
@@ -246,54 +370,17 @@ h1 span {
 .abouthomepage {
   padding-top: 10px;
   font-size: 1.2rem;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 p span {
   color: #db9b07;
 }
-
-/* cv div homepage */
-/* .cv {
-    text-align: center;
-    padding-top: 25px;
+.bottomhomepage{
+  padding-top: 50%;
+  color:#db9b07;
 }
-
-/* cv button homepage */
-/* .button1 {
-    box-shadow: 0 8px 16px 0 rgb(2 2 2), 0 6px 20px 0 rgb(2 2 2);
-} */
-
-/*button style all page*/
-/* .button {
-    background-color: #db9b07;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-   
-}
-
-.button i {
-    font-size: 1.5rem;
-}
-
-.resume {
-    color: white;
-    padding-left: 10px;
-    font-size: 25px;
-} */
-
-/* .button:hover {
-    background-color: #1f1f20;
-    color: #db9b07;
-}  */
 
 /*section for all*/
 .section1 {
@@ -372,7 +459,7 @@ video {
   height: 500px;
 }
 
-#section2 h5 a{
+#section2 p a{
   background-color:transparent;
   padding: 0%;
   margin-left:-5%;
@@ -380,7 +467,7 @@ video {
 #section2 #modal-4 img{
 top: 0;
  width: 70%;
- height: 50vh;
+ height: 40vh;
 }
 
 #section2 p span {
