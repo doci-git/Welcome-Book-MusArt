@@ -377,9 +377,17 @@ h1 span {
 p span {
   color: #db9b07;
 }
-.bottomhomepage{
-  padding-top: 50%;
+.bottomhomepage {
+  position: fixed;
+    bottom: 15px;
+    width: 100%;
   color:#db9b07;
+}
+.bottomhomepage2{
+  color:#ffffff;
+   position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
 
 /*section for all*/
@@ -615,7 +623,7 @@ top: 0;
 
 /*section4 contact*/
 .contacttext {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #db9b076e;
 }
 
@@ -753,21 +761,6 @@ top: 0;
   animation: bounce2 2.4s ease infinite;
 }
 
-.example a .fa-linkedin-in {
-  color: #212194;
-  animation: bounce2 2.8s ease infinite;
-}
-
-.example a .fa-envelope-open {
-  color: #212194;
-  animation: bounce2 3.2s ease infinite;
-}
-
-.example a .fa-github {
-  color: #1f1f20;
-  animation: bounce2 3.6s ease infinite;
-}
-
 .example a .fa-facebook {
   color: #212194;
   animation: bounce2 3s ease infinite;
@@ -801,23 +794,7 @@ top: 0;
   }
 
   /*section3 my project txt*/
-  .worktext {
-    font-size: 3.4rem;
-    color: #db9b076e;
-    padding-bottom: 3rem;
-  }
 
-  .h2aboutwork {
-    padding-top: 6.4rem;
-    color: white;
-    font-size: 2.2rem;
-  }
-
-  .skills i {
-    font-size: 2.5rem;
-    color: #db9b07;
-    padding: 10px;
-  }
 
   /*section4 my project txt*/
   .contacttext {
