@@ -316,7 +316,7 @@ p span {
 #section2 i{
   color: #db9b07;
   font-size: 25px;
-  padding-left: 11px;
+  padding-left: 15px;
 }
 
 .modalDialog {
@@ -343,11 +343,11 @@ p span {
 
 .modalDialog > div {
   width: 100%;
-  height: 70%;
+  height: 90%;
   position: relative;
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
-  background: #34a855;
+  background: #ffffff;
 }
 
 .close {
@@ -355,9 +355,9 @@ p span {
   color: black;
   line-height: 25px;
   position: absolute;
-  right: 10px;
+  right: 19px;
   text-align: center;
-  top: 10px;
+  top: 1px;
   width: 24px;
   text-decoration: none;
   background: none;
@@ -366,6 +366,18 @@ p span {
 
 .close:hover {
   color: #ea4436;
+}
+video {
+  width: 100%;
+  height: 500px;
+}
+#section2 img{
+
+  width: 90%;
+}
+#section2 .linktram{
+  
+  background-color:transparent;
 }
 
 #section2 p span {
