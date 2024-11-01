@@ -438,9 +438,9 @@ p span {
 
 .modalDialog > div {
   width: 100%;
-  height: 90%;
+  height: 99%;
   position: relative;
-  margin: 10% auto;
+  
   padding: 5px 5px 5px 5px;
   background: #ffffff;
 }
