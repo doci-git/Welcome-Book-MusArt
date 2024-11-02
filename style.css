@@ -472,11 +472,16 @@ video {
   margin-left:-5%;
 }
 #section2 .h4lugagge{
- font-size: 1.1rem;
+ font-size: 1.2rem;
  padding: 10px;
 }
+#section2 h4{
+ font-size: 1.05rem;
+ padding: 5px;
+}
+
 #section2 #modal-4 img{
-top: 0%;
+margin-top: -8%;
  width: 90%;
  height: 40vh;
  object-fit:contain;
