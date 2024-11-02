@@ -438,9 +438,8 @@ p span {
 
 .modalDialog > div {
   width: 100%;
-  height: 99%;
+  height: 100%;
   position: relative;
-  
   padding: 5px 5px 5px 5px;
   background: #ffffff;
 }
@@ -472,13 +471,15 @@ video {
   padding: 0%;
   margin-left:-5%;
 }
-#section2 h4{
- font-size: 1rem;
+#section2 .h4lugagge{
+ font-size: 1.1rem;
+ padding: 10px;
 }
 #section2 #modal-4 img{
-top: 0;
- width: 70%;
+top: 0%;
+ width: 90%;
  height: 40vh;
+ object-fit:contain;
 }
 
 #section2 p span {
