@@ -89,7 +89,7 @@ nav {
 .active a {
   padding-bottom: 1rem;
   background-color: #db9b07;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 10px 10px 5px 5px;
   transition: ease 0.5s;
 }
 
