@@ -54,11 +54,16 @@ a {
 
 /*nav style mobile view*/
 nav {
+   z-index: 9999;
+  position: fixed;
+    bottom: 1px;
+    width: 100%;
   text-align: center;
-  background-color: #04040524;
+  background-color: #202022;
 }
 
 .nav-container {
+   
   justify-content: center;
   box-shadow: rgb(2 2 2) 0px 0px 20px 1px;
   padding: 0.5rem;
@@ -483,7 +488,7 @@ video {
 #section2 #modal-4 img{
 margin-top: -8%;
  width: 90%;
- height: 40vh;
+ height: 38vh;
  object-fit:contain;
 }
 
@@ -496,6 +501,7 @@ margin-top: -8%;
 /*section3 nearby*/
 
 #section3 {
+ height: 110vh;
   text-align: center;
   justify-content: center;
   display: inline-block;
