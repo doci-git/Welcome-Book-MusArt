@@ -374,7 +374,7 @@ h1 span {
 
 .abouthomepage {
   padding-top: 10px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -452,7 +452,7 @@ p span {
 .close {
   padding: 0;
   color: black;
-  line-height: 25px;
+  line-height: 20px;
   position: absolute;
   right: 19px;
   text-align: center;
@@ -468,7 +468,7 @@ p span {
 }
 video {
   width: 100%;
-  height: 500px;
+  height: 550px;
 }
 
 #section2 h4 a{
@@ -501,7 +501,7 @@ margin-top: -8%;
 /*section3 nearby*/
 
 #section3 {
- height: 110vh;
+ height: 105vh;
   text-align: center;
   justify-content: center;
   display: inline-block;
@@ -537,6 +537,7 @@ margin-top: -8%;
   font-weight: 600;
 }
 #section3 i {
+  font-size: 1.1rem;
   padding: 5px;
   color: #db9b07;
 }
