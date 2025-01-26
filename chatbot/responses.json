@@ -1,0 +1,153 @@
+{
+  "parole_chiave": {
+    "greetings": ["ciao", "salve", "buongiorno"],
+    "greeting": ["hi", "hello"],
+    "blind": ["shutters", "blinders"],
+    "photo": ["transport", "tram", "photo"],
+    "fototram": ["linefoto"],
+    "wifi": ["wifi", "code", "internet"],
+    "lugg": ["luggage", "valige", "lug"],
+    "checkout": ["checkout", "check-out", "keys", "leave"],
+    "taxi": ["taxi", "cab", "uber"],
+    "ticket": ["ticket", "trainticket", "box office"],
+    "resta": ["bar", "restaurant", "food"],
+    "coffy": ["coffee", "cafe", "coffeey"],
+    "tap": ["tapwate", "tap"],
+    "hot": ["hotwater", "hot"],
+    "other": ["other"],
+    "stu": ["stupid", "silly"],
+    "stu1": ["there"],
+    "help": ["help"]
+  },
+
+
+  "risposte": {
+    "greetings": 
+      {
+        "type": "text",
+        "content": "Ciao! Come posso aiutarti?"
+      }
+    ,
+    "greeting": 
+      {
+        "type": "text",
+        "content": "Hi how i can help you?"
+      }
+    ,
+    "blind":
+      {
+        "type": "video",
+        "content": "./video/shutter.mp4"
+      }
+    ,
+    "photo": 
+      {
+        "content": "Dear Guest,The fastest way to reach the main attractions, if you prefer not to walk, is by taking the tram . From the apartment, take tram T2 in the direction of Unita . The tram stop near the apartment is called Belfiore . In just 3 stops, you’ll arrive near the Duomo; get off at Unita . To return to the apartment, simply take the same tram T2 in the direction of Peretola. The trip takes only 5-8 minutes. For a visual guide, type (linefoto) . Enjoy exploring the city"
+      }
+    ,
+    "fototram": 
+      {
+        "type": "image",
+        "content": "./image/test.img.jpeg"
+      }
+    ,
+
+    "help": 
+      {
+        "type": "text",
+        "content": ["check the list again what you can ask me"]
+      }
+    ,
+    "wifi":
+      {
+        "type": "text",
+        "content": "Wi-Fi Access Information Here are the details to connect to the Wi-Fi:Name: Vodafone 203392 Code: wfddsvfdfv For a faster connection, you can also scan the QR provideo on the brochure located on the table . Enjoy your stay"
+        
+      }
+    ,
+    "lugg": 
+      {
+        "type": "textWithLink",
+        "text": "Dear Guest,Storing luggage on-site after check-out is challenging for us as we don’t have a proper storage space and need to prepare the rooms for upcoming guests . Fortunately, there’s a convenient luggage storage facility at the nearby train station where you can securely leave your belongings. The cost is €1 per hour or €6 for the entire day. We appreciate your understanding and hope this alternative works for you. You can find more details at the following link:->",
+        "link": {
+          "url": "https://leftluggageflorence.com",
+          "displayText": "https://leftluggageflorence.com"
+        }
+      }
+    ,
+    "checkout": 
+      {
+        "type": "text",
+        "content": 
+          "Dear Guest,For check-out, simply leave the keys on the table inside the room and ensure you don’t forget any of your belongings. Please also remember to turn off the lights and A/C and close all doors. We wish you a wonderful trip to your next destination!:)"
+        
+      }
+    ,
+    "taxi": 
+      {
+        "type": "text",
+        "content": [
+          "Dear Guest, Here are the numbers you can call to book a taxi: 📞 0039 4390 📞 0039 4242"
+        ]
+      }
+    ,
+    "ticket": 
+      {
+        "type": "textWithLink",
+        "text": "Hi If you’re looking for tram tickets, you can find red machines at every tram stop where you can purchase them using cash or card. The ticket is valid for 90 minutes. Please remember to validate it once you’re inside the tram. If you’d like to book a train ticket, you can check the official website. All major destinations are served by both fast and regular trains. Here’s the link->",
+        "link": {
+          "url": "https://leftluggageflorence.com/",
+          "displayText": "trenitalia website"
+        }
+      }
+    ,
+    "resta":
+      {
+        "type": "text",
+        "content": "HI If youre looking for restaurants, bars, or other places, feel free to check out the website. Simply navigate through the navbar, and you will find plenty of great spots nearby. :)"
+      }
+    ,
+    "coffy": 
+      {
+        "type": "video",
+        "content": "./video/caffe.mp4"
+      }
+    ,
+    "tap": 
+      {
+        "type": "text",
+        "content": "Dear Guest, The tap water in the room is safe to drink if you like to use it. However, I personally dont enjoy the taste it has, but it is completely safe Thank you"
+      }
+    ,
+    "hot": 
+      {
+        "type": "text",
+        "content": "Dear Guest, Please note that hot water may take 30 to 50 seconds to arrive, as we use an instant heating system. If the hot water doesn't arrive, feel free to send me a message, and i will assist you right away. Thank you for your understanding!"
+      }
+    ,
+    "other":
+      {
+        "type": "text",
+        "content": "If you need any additional information, feel free to send me a text directly. I’ll be more than happy to assist you! :)"
+      }
+    ,
+    "default": 
+      {
+        "type": "text",
+        "content": "Sorry, I didn't understand can you reformulated the question . if the answer doesn't fulfill you, text me directly"
+      }
+    ,
+    "stu": 
+      {
+        "type": "text",
+        "content": "It might sound a bit silly or stupid, but I’m just a chatbot! My creator tries to predict your questions and give you the best answers. Here’s a little joke: Knock Knock type (Who is there)"
+      }
+    ,
+    "stu1": 
+      {
+        "type": "text",
+        "content": "who is the silly one now ahahaha ,dont get mad i already predicted this"
+      }
+    
+  }
+}
