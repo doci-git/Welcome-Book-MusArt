@@ -181,13 +181,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // Funzione per salvare una domanda
   async function saveUserQuestion(question) {
     try {
-      const response = await fetch("http://localhost:3000/api/questions", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ text: question }),
-      });
+        const response = await fetch("http://localhost:3000/api/questions", {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ text: question }),
+        });
+    // ...
+
 
       if (!response.ok) {
         throw new Error(`Errore ${response.status}`);
@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Funzione per mostrare le domande salvate
   async function showSavedQuestions() {
     try {
-      const response = await fetch("http://localhost:3000/api/questions");
+      const response = await fetch("http://localhost:3000/api/questions"); // ✅ Porta 3000;
       const questions = await response.json();
 
       const chatBox = document.getElementById("chat-box");

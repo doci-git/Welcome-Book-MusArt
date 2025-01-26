@@ -7,6 +7,7 @@ const questionRoutes = require("./routes/questions");
 const app = express();
 const port = 3000;
 
+app.listen(3000, () => {  }); // ✅
 // Middleware
 app.use(bodyParser.json());
 app.use(
@@ -37,3 +38,9 @@ app.use("/api/questions", questionRoutes);
 app.listen(port, () => {
   console.log(`🚀 Server in ascolto su http://localhost:${port}`);
 });
+app.use(
+  cors({
+    origin: "http://localhost:5500", // Porta del live server del frontend
+    methods: ["GET", "POST"], // Abilita POST
+  })
+);
