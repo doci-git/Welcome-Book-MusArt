@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Funzione per mostrare le domande salvate
   async function showSavedQuestions() {
     try {
-      const response = await fetch("http://localhost:3000/api/questions"); // ✅ Porta 3000;
+      const response = await fetch("http://localhost:3000/api/questions", {  } ); // ✅ Porta 3000;
       const questions = await response.json();
 
       const chatBox = document.getElementById("chat-box");

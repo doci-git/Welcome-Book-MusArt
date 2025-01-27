@@ -27,3 +27,4 @@ router.get("/", async (req, res) => {
 // router.get('/', async (req, res) => { });  // Rotta GET
 
 module.exports = router;
+
