@@ -178,28 +178,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Sostituisci la funzione showSavedQuestions
 
-  // Funzione per salvare una domanda
-  async function saveUserQuestion(question) {
-    try {
-        const response = await fetch("http://localhost:3000/api/questions", {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ text: question }),
-        });
-    // ...
-
-
-      if (!response.ok) {
-        throw new Error(`Errore ${response.status}`);
-      }
-
-      const data = await response.json();
-      console.log("Risposta del backend:", data);
-    } catch (error) {
-      console.error("Errore nel salvataggio:", error);
-    }
-  }
-
   // Funzione per mostrare le domande salvate
   async function showSavedQuestions() {
     try {
