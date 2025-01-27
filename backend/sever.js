@@ -11,11 +11,15 @@ app.listen(3000, () => {  }); // ✅
 // Middleware
 app.use(bodyParser.json());
 app.use(
-  cors({
-    origin: "http://localhost:5500",
-    methods: ["GET", "POST"],
-  })
+ 
 );
+const corsOptions = {
+  origin: ['http://127.0.0.1:5500', 'http://localhost:5500'], // Frontend su Live Server (5500)
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
+
+app.use(cors(corsOptions)); // ✅
 
 // Connessione a MongoDB
 mongoose
