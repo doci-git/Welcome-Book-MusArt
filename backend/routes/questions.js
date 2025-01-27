@@ -23,7 +23,7 @@ router.get("/", async (req, res) => {
     res.status(500).json({ error: "Errore del server" });
   }
 });
-router.post('/', async (req, res) => { }); // Rotta POST
-router.get('/', async (req, res) => { });  // Rotta GET
+// router.post('/', async (req, res) => { }); // Rotta POST
+// router.get('/', async (req, res) => { });  // Rotta GET
 
 module.exports = router;
