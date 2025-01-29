@@ -94,7 +94,7 @@ nav {
 }
 
 
-.fa-calendar ,.fa-house-user {
+.fa-calendar ,.fa-house-user,.fa-mug-saucer {
   -webkit-animation: bounce-top 3.2s ease-out infinite alternate-reverse both;
   animation: bounce-top 3.2s ease-out infinite alternate-reverse both;
 }

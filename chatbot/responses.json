@@ -17,7 +17,8 @@
     "other": ["other"],
     "stu": ["stupid", "silly"],
     "stu1": ["there"],
-    "help": ["help"]
+    "help": ["help"],
+    "city": ["tour","guide"]
   },
 
 
@@ -68,7 +69,7 @@
     "lugg": 
       {
         "type": "textWithLink",
-        "text": "Dear Guest,Storing luggage on-site after check-out is challenging for us as we don’t have a proper storage space and need to prepare the rooms for upcoming guests . Fortunately, there’s a convenient luggage storage facility at the nearby train station where you can securely leave your belongings. The cost is €1 per hour or €6 for the entire day. We appreciate your understanding and hope this alternative works for you. You can find more details at the following link:->",
+        "text": "Dear Guest,Storing luggage on-site after check-out is challenging for us as we don’t have a proper storage space and need to prepare the rooms for upcoming guests . Fortunately, there’s a convenient luggage storage facility at the nearby train station where you can securely leave your belongings. The cost is €1 per hour or €6 for the entire day. We appreciate your understanding and hope this alternative works for you. You can find more details at the following link ⬇️",
         "link": {
           "url": "https://leftluggageflorence.com",
           "displayText": "https://leftluggageflorence.com"
@@ -94,7 +95,7 @@
     "ticket": 
       {
         "type": "textWithLink",
-        "text": "Hi If you’re looking for tram tickets, you can find red machines at every tram stop where you can purchase them using cash or card. The ticket is valid for 90 minutes. Please remember to validate it once you’re inside the tram. If you’d like to book a train ticket, you can check the official website. All major destinations are served by both fast and regular trains. Here’s the link->",
+        "text": "Hi If you’re looking for tram tickets, you can find red machines at every tram stop where you can purchase them using cash or card. The ticket is valid for 90 minutes. Please remember to validate it once you’re inside the tram. If you’d like to book a train ticket, you can check the official website. All major destinations are served by both fast and regular trains. Here’s the link ⬇️",
         "link": {
           "url": "https://www.trenitalia.com/it.html?cid=G_AV1022AWO_SEARCH_B_Trenitalia_E&gad_source=1&gclid=Cj0KCQiAwOe8BhCCARIsAGKeD56pDg3zGEDDBaD_OP0Bm6IWI_kxn65GUz_kJmoNaEJTnKx4i1aBJW0aAkz5EALw_wcB&gclsrc=aw.ds",
           "displayText": "trenitalia website"
@@ -134,7 +135,7 @@
     "default": 
       {
         "type": "text",
-        "content": "Sorry, I didn't understand can you reformulated the question . if the answer doesn't fulfill you, text me directly"
+        "content": "Sorry, I didn't understand can you reformulated the question check the list. if your looking for different question, text me directly"
       }
     ,
     "stu": 
@@ -147,6 +148,15 @@
       {
         "type": "text",
         "content": "who is the silly one now ahahaha ,dont get mad i already predicted this"
+      },
+       "city": 
+      {
+        "type": "textWithLink",
+        "text": "Dear Guest,Additionally, I’ve created a guide with all the main attractions in Florence that you might find helpful:⬇️",
+        "link": {
+          "url": "https://abnb.me/QqiVVOZYsIb",
+          "displayText": "CityGuide"
+        }
       }
     
   }
