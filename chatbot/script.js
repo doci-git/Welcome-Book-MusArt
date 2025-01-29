@@ -168,25 +168,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 0.1); // Velocità di digitazione (50ms per carattere)
   }
 
-  function saveUserQuestion(question) {
-    let savedQuestions =
-      JSON.parse(localStorage.getItem("userQuestions")) || [];
-    savedQuestions.push(question);
-    localStorage.setItem("userQuestions", JSON.stringify(savedQuestions));
-    console.log("Domanda salvata:", question); // Verifica che la domanda sia salvata
+  // Sostituisci la funzione saveUserQuestion
+  async function saveUserQuestion(question) {
+    try {
+      const response = await fetch("http://localhost:3000/api/questions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ text: question }),
+      });
+      const data = await response.json();
+      console.log(data.message);
+    } catch (error) {
+      console.error("Errore:", error);
+    }
   }
 
   // Sostituisci la funzione showSavedQuestions
-
-  // Funzione per mostrare le domande salvate
   async function showSavedQuestions() {
     try {
-      const response = await fetch("http://localhost:3000/api/questions", {  } ); // ✅ Porta 3000;
+      const response = await fetch("http://localhost:3000/api/questions");
       const questions = await response.json();
+      console.log("Domande salvate:", questions);
 
       const chatBox = document.getElementById("chat-box");
       chatBox.innerHTML = "";
-
       questions.forEach((question, index) => {
         const messageElement = document.createElement("div");
         messageElement.classList.add("message", "user");
@@ -194,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
         chatBox.appendChild(messageElement);
       });
     } catch (error) {
-      console.error("Errore nel recupero:", error);
+      console.error("Errore:", error);
     }
   }
   //Aggiungi un pulsante per visualizzare le domande salvate
