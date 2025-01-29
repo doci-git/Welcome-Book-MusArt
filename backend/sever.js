@@ -7,16 +7,17 @@ const questionRoutes = require("./routes/questions");
 const app = express();
 const port = 3000;
 
-app.listen(3000, () => {  }); // ✅
+app.listen(3000, () => {}); // ✅
 // Middleware
 app.use(bodyParser.json());
-app.use(
- 
-);
+app.use();
 const corsOptions = {
-  origin: ['http://127.0.0.1:5500', 'http://localhost:5500'], // Frontend su Live Server (5500)
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  origin: [
+    "https://doci-git.github.io/Welcome-Book-MusArt/",
+    "http://localhost:5500",
+  ], // Frontend su Live Server (5500)
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
 };
 
 app.use(cors(corsOptions)); // ✅
