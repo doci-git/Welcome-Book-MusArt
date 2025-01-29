@@ -9,7 +9,11 @@ const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://doci-git.github.io/Welcome-Book-MusArt/", // URL del frontend
+  })
+);
 
 // Connessione a MongoDB
 mongoose
