@@ -14,6 +14,11 @@ app.use(
     origin: "https://doci-git.github.io/Welcome-Book-MusArt/", // URL del frontend
   })
 );
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*"); // Temporaneamente permette tutte le origini
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  next();
+});
 
 // Connessione a MongoDB
 mongoose
