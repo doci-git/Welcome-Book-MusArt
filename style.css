@@ -607,7 +607,7 @@ margin-top: -8%;
     both;
   animation: slide-in-left 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.test4 {
+.test4 , #toggle-chat{
   -webkit-animation: slide-in-left 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: slide-in-left 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
