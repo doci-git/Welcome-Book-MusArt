@@ -169,46 +169,28 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Sostituisci la funzione saveUserQuestion
-  async function saveUserQuestion(question) {
-    try {
-      const response = await fetch("http://localhost:3000/api/questions", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ text: question }),
-      });
-      const data = await response.json();
-      console.log(data.message);
-    } catch (error) {
-      console.error("Errore:", error);
-    }
-  }
+      function saveUserQuestion(question) {
+        let savedQuestions =
+          JSON.parse(localStorage.getItem("userQuestions")) || [];
+        savedQuestions.push(question);
+        localStorage.setItem("userQuestions", JSON.stringify(savedQuestions));
+        console.log("Domanda salvata:", question);
+      }
 
-  // Sostituisci la funzione showSavedQuestions
-  async function showSavedQuestions() {
-    try {
-      const response = await fetch("http://localhost:3000/api/questions");
-      const questions = await response.json();
-      console.log("Domande salvate:", questions);
+      function showSavedQuestions() {
+        const savedQuestions =
+          JSON.parse(localStorage.getItem("userQuestions")) || [];
+        console.log("Domande salvate:", savedQuestions);
 
-      const chatBox = document.getElementById("chat-box");
-      chatBox.innerHTML = "";
-      questions.forEach((question, index) => {
-        const messageElement = document.createElement("div");
-        messageElement.classList.add("message", "user");
-        messageElement.innerHTML = `<p>${index + 1}. ${question.text}</p>`;
-        chatBox.appendChild(messageElement);
-      });
-    } catch (error) {
-      console.error("Errore:", error);
-    }
-  }
-  //Aggiungi un pulsante per visualizzare le domande salvate
-  // const showQuestionsBtn = document.createElement("button");
-  // showQuestionsBtn.textContent = "Mostra Domande Salvate";
-  // showQuestionsBtn.addEventListener("click", saveUserQuestions);
-  // document.body.appendChild(showQuestionsBtn);
+        const chatBox = document.getElementById("chatbot-box");
+        chatBox.innerHTML = "";
+        savedQuestions.forEach((question, index) => {
+          const messageElement = document.createElement("div");
+          messageElement.classList.add("chatbot-message", "user");
+          messageElement.innerHTML = `<p>${index + 1}. ${question}</p>`;
+          chatBox.appendChild(messageElement);
+        });
+      }
 });
 
 const toggleChatBtn = document.getElementById("toggle-chat");
