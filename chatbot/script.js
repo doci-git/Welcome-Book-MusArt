@@ -169,28 +169,29 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Sostituisci la funzione saveUserQuestion
-      function saveUserQuestion(question) {
-        let savedQuestions =
-          JSON.parse(localStorage.getItem("userQuestions")) || [];
-        savedQuestions.push(question);
-        localStorage.setItem("userQuestions", JSON.stringify(savedQuestions));
-        console.log("Domanda salvata:", question);
-      }
 
-      function showSavedQuestions() {
-        const savedQuestions =
-          JSON.parse(localStorage.getItem("userQuestions")) || [];
-        console.log("Domande salvate:", savedQuestions);
+    function saveUserQuestion(question) {
+      let savedQuestions =
+        JSON.parse(localStorage.getItem("userQuestions")) || [];
+      savedQuestions.push(question);
+      localStorage.setItem("userQuestions", JSON.stringify(savedQuestions));
+      console.log("Domanda salvata:", question);
+    }
 
-        const chatBox = document.getElementById("chatbot-box");
-        chatBox.innerHTML = "";
-        savedQuestions.forEach((question, index) => {
-          const messageElement = document.createElement("div");
-          messageElement.classList.add("chatbot-message", "user");
-          messageElement.innerHTML = `<p>${index + 1}. ${question}</p>`;
-          chatBox.appendChild(messageElement);
-        });
-      }
+    function showSavedQuestions() {
+      const savedQuestions =
+        JSON.parse(localStorage.getItem("userQuestions")) || [];
+      console.log("Domande salvate:", savedQuestions);
+
+      const chatBox = document.getElementById("chatbot-box");
+      chatBox.innerHTML = "";
+      savedQuestions.forEach((question, index) => {
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("chatbot-message", "user");
+        messageElement.innerHTML = `<p>${index + 1}. ${question}</p>`;
+        chatBox.appendChild(messageElement);
+      });
+    }
 });
 
 const toggleChatBtn = document.getElementById("toggle-chat");
