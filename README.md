@@ -1,3 +1,3 @@
 # new welcome book
 
-https://doci-git.github.io/Welcome-Book-MusArt/
+https://github.com/doci-git/Welcome-Book-MusArt/tree/main/chatbot
