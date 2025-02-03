@@ -43,13 +43,13 @@
     ,
     "photo": 
       {
-        "content": "Dear Guest,The fastest way to reach the main attractions, if you prefer not to walk, is by taking the tram . From the apartment, take tram T2 in the direction of Unita . The tram stop near the apartment is called Belfiore . In just 3 stops, you’ll arrive near the Duomo; get off at Unita . To return to the apartment, simply take the same tram T2 in the direction of Peretola. The trip takes only 5-8 minutes. For a visual guide, type (linefoto) . Enjoy exploring the city"
+        "content": "Dear Guest,The fastest way to reach the main attractions, if you prefer not to walk, is by taking the tram . From the apartment, take tram T2 in the direction of San Marco Universita . The tram stop near the apartment is called Belfiore . In just 3 stops, you’ll arrive near the Duomo; get off at Valfonda . To return to the apartment, simply take the same tram T2 in the direction of Peretola. The trip takes only 5-8 minutes. For a visual guide, type (linefoto) . Enjoy exploring the city"
       }
     ,
     "fototram": 
       {
         "type": "image",
-        "content": "./image/test.img.jpeg"
+        "content": "./image/test.img.jpg"
       }
     ,
 
