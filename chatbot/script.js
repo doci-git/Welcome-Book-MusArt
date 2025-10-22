@@ -118,21 +118,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Quick replies: intent predefiniti per risposta immediata (con icone)
       const QUICK_REPLIES = [
-        { intent: "wifi",     label: "WiFi",        icon: "fa-wifi" },
-        { intent: "taxi",     label: "Taxi",        icon: "fa-taxi" },
-        { intent: "photo",    label: "Tram",        icon: "fa-train-subway" },
+        { intent: "wifi", label: "WiFi", icon: "fa-wifi" },
+        { intent: "blind", label: "Shutters", icon: "fa-window-maximize" },
+        { intent: "taxi", label: "Taxi", icon: "fa-taxi" },
+        { intent: "photo", label: "Tram", icon: "fa-train-subway" },
         // { intent: "fototram", label: "Tram Photo",  icon: "fa-image" },
-        { intent: "coffy",    label: "Coffee",      icon: "fa-mug-saucer" },
-        { intent: "lugg",     label: "Luggage",     icon: "fa-suitcase-rolling" },
-        { intent: "checkout", label: "Check-out",   icon: "fa-key" },
-        { intent: "ticket",   label: "Ticket",      icon: "fa-ticket" },
-        { intent: "tap",      label: "Tap Water",   icon: "fa-faucet" },
-        { intent: "hot",      label: "Hot Water",   icon: "fa-temperature-high" },
-        { intent: "city",     label: "City Guide",  icon: "fa-map-location-dot" },
-        { intent: "resta",    label: "Restaurants", icon: "fa-utensils" },
-        { intent: "blind",    label: "Shutters",    icon: "fa-window-maximize" },
-        { intent: "help",     label: "Help",        icon: "fa-circle-question" },
-        { intent: "other",    label: "Other",       icon: "fa-ellipsis" }
+        { intent: "coffy", label: "Coffee", icon: "fa-mug-saucer" },
+        { intent: "lugg", label: "Luggage", icon: "fa-suitcase-rolling" },
+        { intent: "checkout", label: "Check-out", icon: "fa-key" },
+        { intent: "ticket", label: "Ticket", icon: "fa-ticket" },
+        { intent: "tap", label: "Tap Water", icon: "fa-faucet" },
+        { intent: "hot", label: "Hot Water", icon: "fa-temperature-high" },
+        { intent: "city", label: "City Guide", icon: "fa-map-location-dot" },
+        { intent: "resta", label: "Restaurants", icon: "fa-utensils" },
+
+        { intent: "help", label: "Help", icon: "fa-circle-question" },
+        { intent: "other", label: "Other", icon: "fa-ellipsis" },
       ];
 
       function respondWithIntent(intent, label) {
