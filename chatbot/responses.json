@@ -48,7 +48,7 @@
     },
     "help": {
       "type": "text",
-      "content": ["check the list again what you can ask me"]
+      "content": ["check the list again what you can ask me or if your looking for different question, text me directly"]
     },
     "wifi": {
       "type": "text",

@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const QUICK_REPLIES = [
         { intent: "wifi", label: "WiFi", icon: "fa-wifi" },
         { intent: "blind", label: "Shutters", icon: "fa-window-maximize" },
+        
         { intent: "taxi", label: "Taxi", icon: "fa-taxi" },
         { intent: "photo", label: "Tram", icon: "fa-train-subway" },
         // { intent: "fototram", label: "Tram Photo",  icon: "fa-image" },
