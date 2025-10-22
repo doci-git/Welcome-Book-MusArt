@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { intent: "coffy", label: "Coffee" },
         { intent: "photo", label: "Tram" },
         { intent: "lugg", label: "Luggage" },
-        { intent: "wifi", label: "WiFi" },
+        { intent: "wifi", label: "Wi-Fi" },
         { intent: "checkout", label: "Check-out" },
         { intent: "taxi", label: "Taxi" },
         { intent: "ticket", label: "Ticket" },
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { intent: "city", label: "City Guide" },
         { intent: "resta", label: "Restaurants" },
         { intent: "other", label: "Other" },
-        { intent: "shower", label: "Shower" }
+        { intent: "shower", label: "Switch Shower" }
       ];
 
       function respondWithIntent(intent, label) {

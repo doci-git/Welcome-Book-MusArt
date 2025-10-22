@@ -5,8 +5,8 @@
     "blind": ["shutters", "blinders"],
     "photo": ["transport", "tram", "photo"],
     "fototram": ["linefoto"],
-    "wifi": ["wifi", "code", "internet"],
-    "lugg": ["luggage", "valige", "bags"],
+    "wifi": ["wifi","wi-fi", "code", "internet"],
+    "lugg": ["luggage", "valigge", "bags"],
     "checkout": ["checkout", "check-out", "keys", "leave"],
     "taxi": ["taxi", "cab", "uber"],
     "ticket": ["ticket", "trainticket", "box office"],
@@ -44,7 +44,7 @@
     },
     "shower": {
       "type": "image",
-      "content": "./image/test.img.jpg"
+      "content": "./image/shower.jpg"
     },
     "help": {
       "type": "text",
