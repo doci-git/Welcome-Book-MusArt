@@ -74,6 +74,9 @@ body.dark-theme .chat-header {
   margin-bottom: 4px;
 }
 .quick-reply {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   background: #f1f4f8;
   color: #0f3057;
   border: 1px solid #d8e1ea;
@@ -82,8 +85,10 @@ body.dark-theme .chat-header {
   font-size: 12px;
   cursor: pointer;
   user-select: none;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.05s ease;
 }
+.quick-reply i { font-size: 12px; vertical-align: middle; width: 14px; min-width: 14px; text-align: center; }
+.quick-reply:active { transform: none; }
 .quick-reply:hover { background: #e7eef7; }
 .quick-reply:active { background: #dfe9f6; }
 .quick-reply:disabled { opacity: 0.6; cursor: not-allowed; }
@@ -106,6 +111,18 @@ body.dark-theme .quick-reply {
   border-color: #444;
 }
 body.dark-theme .quick-reply:hover { background: #333; }
+
+/* Isola le icone del chatbot da animazioni globali */
+.chat-container .fa-solid,
+.chat-container .fa-regular,
+.chat-container .fa-light,
+.chat-container .fa-brands,
+.chat-container [class^="fa-"],
+.chat-container [class*=" fa-"] {
+  -webkit-animation: none !important;
+  animation: none !important;
+  transform: none !important;
+}
 
 .chat-input {
     display: flex;

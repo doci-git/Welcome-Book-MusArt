@@ -116,22 +116,23 @@ document.addEventListener("DOMContentLoaded", () => {
         userInput.disabled = disabled;
       };
 
-      // Quick replies: intent predefiniti per risposta immediata
+      // Quick replies: intent predefiniti per risposta immediata (con icone)
       const QUICK_REPLIES = [
-        { intent: "blind", label: "Shutters" },
-        { intent: "coffy", label: "Coffee" },
-        { intent: "photo", label: "Tram" },
-        { intent: "lugg", label: "Luggage" },
-        { intent: "wifi", label: "Wi-Fi" },
-        { intent: "checkout", label: "Check-out" },
-        { intent: "taxi", label: "Taxi" },
-        { intent: "ticket", label: "Ticket" },
-        { intent: "hot", label: "Hot Water" },
-        { intent: "tap", label: "Tap Water" },
-        { intent: "city", label: "City Guide" },
-        { intent: "resta", label: "Restaurants" },
-        { intent: "other", label: "Other" },
-        { intent: "shower", label: "Switch Shower" }
+        { intent: "wifi",     label: "WiFi",        icon: "fa-wifi" },
+        { intent: "taxi",     label: "Taxi",        icon: "fa-taxi" },
+        { intent: "photo",    label: "Tram",        icon: "fa-train-subway" },
+        // { intent: "fototram", label: "Tram Photo",  icon: "fa-image" },
+        { intent: "coffy",    label: "Coffee",      icon: "fa-mug-saucer" },
+        { intent: "lugg",     label: "Luggage",     icon: "fa-suitcase-rolling" },
+        { intent: "checkout", label: "Check-out",   icon: "fa-key" },
+        { intent: "ticket",   label: "Ticket",      icon: "fa-ticket" },
+        { intent: "tap",      label: "Tap Water",   icon: "fa-faucet" },
+        { intent: "hot",      label: "Hot Water",   icon: "fa-temperature-high" },
+        { intent: "city",     label: "City Guide",  icon: "fa-map-location-dot" },
+        { intent: "resta",    label: "Restaurants", icon: "fa-utensils" },
+        { intent: "blind",    label: "Shutters",    icon: "fa-window-maximize" },
+        { intent: "help",     label: "Help",        icon: "fa-circle-question" },
+        { intent: "other",    label: "Other",       icon: "fa-ellipsis" }
       ];
 
       function respondWithIntent(intent, label) {
@@ -160,12 +161,14 @@ document.addEventListener("DOMContentLoaded", () => {
         heading.className = "quick-replies-heading";
         heading.textContent = "Here What You Can Ask Me:";
         container.appendChild(heading);
-        QUICK_REPLIES.forEach(({ intent, label }) => {
+        QUICK_REPLIES.forEach(({ intent, label, icon }) => {
           if (!data.risposte[intent]) return; // mostra solo intent disponibili
           const btn = document.createElement("button");
           btn.type = "button";
           btn.className = "quick-reply";
-          btn.textContent = label;
+          btn.title = label;
+          const iconHtml = icon ? `<i class="fa-solid ${icon}"></i>` : "";
+          btn.innerHTML = `${iconHtml}<span>${label}</span>`;
           btn.addEventListener("click", () => respondWithIntent(intent, label));
           container.appendChild(btn);
         });
